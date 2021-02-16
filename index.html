@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"/>
+    <title>JavaChrome</title>
+</head>
+<body>
+    <h1 class="js-time">00:00</h1>
+
+    <form class="js-formName hidden showing">
+        <input type="text" placeholder="What is your name?"/>
+    </form>
+    <h2 class="js-showName hidden"></h2>
+    <form class="js-toDoForm">
+        <input class="js-toDoInput" type="text" placeholder="Write a task"/>
+    </form>
+    <h2>해야할 일</h2>
+    <ul class="js-toDoList"></ul>
+    <h2>끝낸 일</h2>
+    <ul class="js-finishList"></ul>
+
+    <script src="time.js"></script>
+    <script src="name.js"></script>
+    <script src="todolist.js"></script>
+    <script src="background.js"></script>
+</body>
+</html>
