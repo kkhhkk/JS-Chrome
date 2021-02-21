@@ -6,12 +6,23 @@ h2 {
   justify-content: left;
   align-items: center;
 }
+
 .hidden {
   display: none;
 }
 
 .showing {
   display: block;
+}
+
+.js-formName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.js-hidden {
+  display: none;
 }
 
 @keyframes fadeIn {
@@ -51,7 +62,6 @@ h2 {
   align-items: center;
   font-size: 60px;
 }
-.js-formName,
 .js-toDoForm,
 .js-showName {
   display: flex;

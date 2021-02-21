@@ -20,6 +20,7 @@ function showName(text){
     printName.innerHTML = ` ${text}, 성공은 어느 한 순간에 얻어지는 것이 아니다. 조금씩의 계획에 의해 완성되는 것이다.`;
     formName.classList.remove(SHOW);
     printName.classList.add(SHOW);
+    formName.classList.add("js-hidden")
     saveName(text);
 }
 
