@@ -3,15 +3,26 @@ body {
 }
 h2 {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 }
+
 .hidden {
   display: none;
 }
 
 .showing {
   display: block;
+}
+
+.js-formName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.js-hidden {
+  display: none;
 }
 
 @keyframes fadeIn {
@@ -33,28 +44,78 @@ h2 {
   animation: fadeIn 1s linear;
 }
 
-.js-time,
+.js-weather {
+  color: yellow;
+  font-size: 20px;
+}
+
+.js-link {
+  position: absolute;
+  right: 0;
+  top: 5;
+  margin-right: 10px;
+}
+
+.js-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+}
+
 .js-toDoForm,
 .js-showName {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #cddc39;
+  color: #8dd22a;
   margin: auto auto;
-  padding: 20px;
 }
 
+.js-toDoInput {
+  margin-top: 50px;
+  width: 200px;
+  height: 20px;
+}
+
+.js-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 400px;
+  margin-top: 40px;
+}
+
+.js-listForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 350px;
+  margin-right: 270px;
+}
 .js-toDoList,
 .js-finishList {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
   padding: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: wheat;
+  font-size: 20px;
 }
 
-.js-toDoList > li {
+.js-toDoList > li,
+.js-finishList > li {
   display: flex;
-  justify-content: center;
-  padding: 2px 10px;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.js-toDoList > li > span,
+.js-finishList > li > span {
+  display: flex;
+  margin-right: 30px;
+}
+.js-toDoList > li > button,
+.js-finishList > li > button {
+  margin: 0;
 }

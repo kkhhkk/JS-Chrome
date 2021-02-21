@@ -7,8 +7,14 @@
     <title>JavaChrome</title>
 </head>
 <body>
+    <div class="js-weather">
+    </div>
+    <div class="js-link">
+        <a href="https://naver.com"><img src="images/naver.png"></a>
+        <a href="https://google.com"><img src="images/google.png"></a>
+        <a href="https://youtube.com"><img src="images/youtube.png"></a>
+    </div>
     <h1 class="js-time">00:00</h1>
-
     <form class="js-formName hidden showing">
         <input type="text" placeholder="What is your name?"/>
     </form>
@@ -16,14 +22,21 @@
     <form class="js-toDoForm">
         <input class="js-toDoInput" type="text" placeholder="Write a task"/>
     </form>
-    <h2>해야할 일</h2>
-    <ul class="js-toDoList"></ul>
-    <h2>끝낸 일</h2>
-    <ul class="js-finishList"></ul>
+    <div class="js-listBox">
+        <form class="js-list">
+            <h2 class="js-work">해야할 일</h2>
+            <h2 class="js-finish">끝낸 일</h2>
+        </form>
+        <form class="js-listForm">
+            <ul class="js-toDoList"></ul>
+            <ul class="js-finishList"></ul>
+        </form>
 
+    </div>
     <script src="time.js"></script>
     <script src="name.js"></script>
     <script src="todolist.js"></script>
     <script src="background.js"></script>
+    <script src="weather.js"></script>
 </body>
 </html>
